@@ -7,18 +7,30 @@ int* bubblesort(int* array);
 
 int main (void)
 {
-	int array[10];
+	int array[10] = {1, 4, 5, 2, 8, 12, 3, 97, 14, 9};
 	int* sorted = array;
 	sorted = bubblesort(array);
+	for (int i = 0; i < 9; i++)
+	{
+		printf("%d ",array[i]);
+	}
 }
 
 int* bubblesort(int* array)
 {
-	int* i = array;
-	while(*i != NULL)
+	for (int i = 0; i < 8; i++)
 	{
-		++i;
+		for ( int j = 0; j < 8; j++ )
+		{
+			if ( array[j] > array[j + 1] )
+			{
+				int temp = 0;
+				temp = array[j + 1];
+				array[j + 1] = array[j];
+				array[j] = temp;
+			}
+		}
 	}
 
-	return i;
+	return array;
 }
