@@ -9,4 +9,6 @@ This is the first problem for PA1
 int main(void)
 {
 	printf("Hello World");
+
+	return 0;
 }

@@ -14,6 +14,8 @@ int main (void)
 	{
 		printf("%d ",array[i]);
 	}
+
+	return 0;
 }
 
 int* bubblesort(int* array)
