@@ -3,4 +3,4 @@ project(PA1 C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(PA1 iterfactorial.c)
+add_executable(PA1 recfactorial.c)

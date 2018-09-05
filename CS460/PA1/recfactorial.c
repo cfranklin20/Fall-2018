@@ -11,6 +11,23 @@ int main(void)
 	int fact = 0;
 	printf("Enter a whole number: ");
 	scanf("%d",&fact);
+
+	if(fact < 0)
+	{
+		printf("Cannot take the factorial of a negative number\n");
+	}
+	while (fact < 0)
+	{
+		printf("Enter a whole number: ");
+		scanf("%d",&fact);
+
+		if(fact < 0)
+		{
+			printf("Cannot take the factorial of a negative number\n");
+		}
+	}
+
+
 	int result = 0;
 	result = factorial(fact);
 	printf("The factorial of %d is %d",fact,result);

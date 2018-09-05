@@ -3,23 +3,18 @@
 //
 #include <stdio.h>
 
-int* bubblesort(int* array);
-
 int main (void)
 {
-	int array[10] = {1, 4, 5, 2, 8, 12, 3, 97, 14, 9};
-	int* sorted = array;
-	sorted = bubblesort(array);
+	int array[10] = {1, 4, 5, 2, 8, 12, 3, 97, 14, 9};\
+
+	printf("Array before being sorted: \n");
+
 	for (int i = 0; i < 9; i++)
 	{
 		printf("%d ",array[i]);
 	}
+	printf("\n");
 
-	return 0;
-}
-
-int* bubblesort(int* array)
-{
 	for (int i = 0; i < 8; i++)
 	{
 		for ( int j = 0; j < 8; j++ )
@@ -34,5 +29,11 @@ int* bubblesort(int* array)
 		}
 	}
 
-	return array;
+	printf("Array after being sorted: \n");
+	for (int i = 0; i < 9; i++)
+	{
+		printf("%d ",array[i]);
+	}
+
+	return 0;
 }
